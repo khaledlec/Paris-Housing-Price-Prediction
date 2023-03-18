@@ -17,6 +17,13 @@ Heroku is widely used by startups, small businesses, and enterprises to deploy a
 
 3. [VSCodeIDE](https://code.visualstudio.com/)
 4. [GitCLI](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
+5. [Postman]: postman is a popular API development tool that simplifies the process of building, testing, documenting, and sharing APIs. It allows developers to send HTTP requests and observe the responses, as well as to set up automated testing and monitoring of APIs.
+
+Postman provides a user-friendly interface for creating and managing requests, with options for specifying headers, request parameters, authentication methods, and more. It also includes a powerful testing framework that allows developers to write automated tessts and run them on a collection of APIs.
+
+In addition to its core functionality, Postman offers a number of other features, such as collaboration tools for teams, API documentation generation, and integration with other development tools.
+
+Overall, Postman is a versatile and useful tool for API developers and testers, providing a streamlined and efficient workflow for building and testing APIs.
 
 Create a new environment
 
