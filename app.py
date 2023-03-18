@@ -1,5 +1,6 @@
 import json
 import pickle
+import pandas as pd
 
 from flask import Flask,request,app,jsonify,url_for,render_template
 import numpy as np
@@ -21,6 +22,14 @@ def predict_api():
     output=model.predict(data)
     print(output[0])
     return jsonify(output[0])
+
+@app.route('/predict',methods=['POST'])
+def predict():
+    data=pd.json_normalize(request.form)
+    print(data)
+    output=model.predict(data)[0]
+    return render_template("home.html",prediction_text="The House price prediction is {}".format(output))
+
 
 if __name__=="__main__":
     app.run(debug=True)
