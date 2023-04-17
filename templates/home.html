@@ -1,15 +1,58 @@
 <!DOCTYPE html>
-<html >
+<html>
 
 <head>
   <meta charset="UTF-8">
-  <title>ML API</title>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-
-  
+  <title>Model API</title>
+  <style>
+    body {
+      background-color: #4B0082;
+      background-image: linear-gradient(135deg, #4B0082 0%, #000000 100%);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    .login {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 50px auto;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      font-family: 'Pacifico', cursive;
+      margin-bottom: 20px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+      font-size: 16px;
+      font-family: 'Arimo', sans-serif;
+    }
+    button[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 5px;
+      border: none;
+      background-color: #9400D3;
+      color: white;
+      font-size: 16px;
+      font-family: 'Arimo', sans-serif;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #4B0082;
+    }
+  </style>
 </head>
 
 <body>
@@ -20,6 +63,12 @@
     <form action="{{ url_for('predict')}}"method="post">
       <input type="text" name="Surface reelle bati" placeholder="Surface reelle bati" required="required" /><br>
     	<input type="text" name="Code postal" placeholder="Code postal" required="required" /><br>
+      <input type="text" name="No voie" placeholder="No voie" required="required" /><br>
+      <input type="text" name="Voie" placeholder="Voie" required="required" /><br>
+      <input type="text" name="Nombre de lots" placeholder="Nombre de lots" required="required" /><br>
+      <input type="text" name="Nombre pieces principales" placeholder="Nombre pieces principales" required="required" /><br>
+      <input type="text" name="surface_des_lots" placeholder="surface_des_lots" required="required" /><br>
+
 
 
        
@@ -33,6 +82,6 @@
    
  </div>
  {{prediction_text}}
-
 </body>
+
 </html>

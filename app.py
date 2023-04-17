@@ -13,16 +13,6 @@ model=pickle.load(open('model.pkl','rb'))
 def home():
     return render_template('home.html')
 
-@app.route('/predict_api',methods=['POST'])
-def predict_api():
-    data=pd.json_normalize(request.json['data'])
-    
-    print(data)
-    #print(np.array(list(data.values())).reshape(1,-1))
-    output=model.predict(data)
-    print(output[0])
-    return jsonify(output[0])
-
 @app.route('/predict',methods=['POST'])
 def predict():
     data=pd.json_normalize(request.form)
