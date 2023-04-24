@@ -1,8 +1,5 @@
-python
 pandas
 sklearn
-datetime
-matplotlib
 Flask
 requests
 numpy
