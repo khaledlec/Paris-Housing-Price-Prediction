@@ -1,3 +1,4 @@
+python
 pandas
 sklearn
 datetime
@@ -5,7 +6,6 @@ matplotlib
 Flask
 requests
 numpy
-seaborn
-jsonpip 
+seaborn 
 pickle
 gunicorn
