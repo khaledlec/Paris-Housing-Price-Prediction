@@ -3,6 +3,5 @@ sklearn
 Flask
 requests
 numpy
-seaborn 
-pickle
+seaborn
 gunicorn
