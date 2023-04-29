@@ -1,5 +1,5 @@
 # Paris-Housing-Price-Prediction
-Paris Housing Price Prediction with deployment
+Paris House Pricing Predictions with deployment
 
 
 
@@ -28,5 +28,4 @@ Overall, Postman is a versatile and useful tool for API developers and testers, 
 Create a new environment
 
 ```
-conda create -p venv python==3.7 -y
-```
+conda create -p venv python

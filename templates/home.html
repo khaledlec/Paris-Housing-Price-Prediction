@@ -56,11 +56,11 @@
         background-color: #260a4b;
     }
     .output-container {
-        background-color: rgba(238, 243, 200, 0.7);
+        background-color: rgba(239, 251, 148, 0.7);
         padding: 20px;
         border-radius: 10px;
         color: #201381;
-        font-size: 24px;
+        font-size: 30px;
         text-align: center;
         width: 100%;
         margin-bottom: 20px;
@@ -116,7 +116,7 @@
   </div>
 
   <div class="output-container">
-    {{prediction_text}}
+    {{prediction_text|safe}}
   </div>
 
 </body>

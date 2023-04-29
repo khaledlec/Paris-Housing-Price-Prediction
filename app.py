@@ -32,8 +32,19 @@ def predict():
 
     # Make the prediction
     prediction = model.predict(data)[0]
+    if prediction:
+    # Format prediction value to display only the real part of the number price
+        #prediction_value = '{}'.format(prediction.real)
 
-    return render_template("home.html", prediction_text="The house price prediction is {}".format(prediction))
+    # French translation of the prediction text
+        prediction_text = "Après avoir examiné les critères fournis, nous avons estimé que le prix de cet appartement est d'environ {:.0f} €".format(prediction.real)
+    else:
+        # French translation of the error text
+        prediction_text = "Oops, quelque chose s'est mal passé. Veuillez réessayer."
+
+    # Render the template with the updated prediction text
+    return render_template("home.html", prediction_text=prediction_text)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
