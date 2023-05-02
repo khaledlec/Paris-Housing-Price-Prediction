@@ -16,7 +16,11 @@ Un moteur d’estimation immobilier permettant d’estimer le prix net vendu d�
   - Les taux d’inflation des logements anciens fourniespar l’INSEE:
   https://www.insee.fr/fr/statistiques/6665809#tableau-ipla-g1-fr
   
-![image](https://user-images.githubusercontent.com/103390948/218262256-756cb76b-e644-4d38-9dfb-db09128aae
+![image](https://user-images.githubusercontent.com/103390948/218262256-756cb76b-e644-4d38-9dfb-db09128aae)
+
+## Deployement:
+
+![image](https://miro.medium.com/v2/resize:fit:1192/format:webp/1*DU72-AeG_s55k-SFs2Cmng.png)
 
 ### Software And Tools Requirements
 
